@@ -17,6 +17,7 @@ for ch in key:
 			s.add(ch)
 	if len(matrix[r])==5:
 		r+=1
+
 for i in range(0,26):
 	ch=chr(i+97)
 	if ch not in s:
@@ -90,16 +91,13 @@ for ind in range(0,len(new_pt),2):
 	if i1==i2:
 	    plain_text+=matrix[i1][(j1-1)%5]
 	    plain_text+=matrix[i1][(j2-1)%5]
-
 	elif j1==j2:
 		plain_text+=matrix[(i1-1)%5][j1]
 		plain_text+=matrix[(i2-1)%5][j2]
-
 	else:
 		plain_text+=matrix[i1][j2]
 		plain_text+=matrix[i2][j1]
 	
-
 print(f"plain Text from cipher text is: {plain_text}")
 
 

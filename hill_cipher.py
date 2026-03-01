@@ -17,7 +17,6 @@ print(key)
 
 key=np.array(key)
 
-
 print(math.gcd(int(np.linalg.det(key)),26))
 
 print("Finding the Cipher text: ")
